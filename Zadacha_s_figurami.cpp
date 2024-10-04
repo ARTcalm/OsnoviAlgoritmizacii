@@ -1,7 +1,10 @@
 #include<iostream>
 #include<string>
+#include<windows.h>
 using namespace std;
 int main(){
+    SetConsoleCp(1251) ;
+SetConsoleOutputCp(1251);
     
     int a, b, c, d;
 
