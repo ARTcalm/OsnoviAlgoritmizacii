@@ -1,6 +1,10 @@
 #include<iostream>
+#include<string>
+#include<windows.h>
 using namespace std;
 int main(){
+    SetConsoleCp(1251) ;
+SetConsoleOutputCp(1251);
     int n=9;
     int array[n]={-3,-24,-12,1,3,5,6,7,8};
     int sum = 0;
