@@ -42,6 +42,24 @@ float delenie(float a, float b) {
     return a / b;
 }
 
+int _min(int a, int b) {
+    if (a < b) {
+        return a; 
+    }
+    else {
+        return 0;
+    }
+}
+
+int _max(int a, int b) {
+    if (a > b) {
+        return a;
+    }
+    else {
+        return 0;
+    }
+}
+
 
 int main() {
 
@@ -70,5 +88,15 @@ int main() {
     cout << raznost(f, e) << endl;
     cout << proizvedenie(f, e) << endl;
     cout << delenie(f, e) << endl;
+
+    int g, h;
+    cout << "Введите два числа для проверки на минимальную" << endl;
+    cin >> g >> h;
+    cout << _min(g, h) << endl;
+
+    int x, z;
+    cout << "Введите два числа для проверки на максимальную" << endl;
+    cin >> x >> z;
+    cout << _max(x, z) << endl;
 
 }
