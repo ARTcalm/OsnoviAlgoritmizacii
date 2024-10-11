@@ -17,12 +17,21 @@ int srznach(int a, int b) { //Поиск среднего между двумя 
     return srznach;
 }
 
-int chet_nechet(int a) { //Определение четности
+int chet(int a) {
     if (a % 2 == 0) {
-        return 0;
+        return a;
     }
     else if (a % 2 != 0) {
-        return 1;
+        return 0;
+    }
+}
+
+int nechet(int a) { 
+    if (a % 2 != 0) {
+        return a;
+    }
+    else if (a % 2 == 0) {
+        return 0;
     }
 }
 
@@ -39,7 +48,12 @@ int proizvedenie(int a, int b) {
 }
 
 float delenie(float a, float b) {
-    return a / b;
+    if (b > 0) {
+        return a / b;
+    }
+    else {
+        return 0;
+    }
 }
 
 int _min(int a, int b) {
@@ -79,7 +93,13 @@ int main() {
     int d;
     cout << "Введите число на проверку чётности -" << endl;
     cin >> d;
-    cout << chet_nechet(d) << endl;
+    cout << chet(d) << endl;
+    
+    int abc;
+    cout << "Введите число на проверку нечётности -" << endl;
+    cin >> abc;
+    cout << nechet(abc) << endl;
+
 
     int f,e;
     cout << "Введите числа для арифметических операций -" << endl;
